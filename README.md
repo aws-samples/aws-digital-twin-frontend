@@ -35,8 +35,8 @@ For a best experience ensure torun the complete project in a single region. We u
 ### 1. Clone this repo locally
 
 ```
-git clone https://github.com/aws-samples/tbd.git
-cd tbd
+git clone https://github.com/aws-samples/aws-digital-twin-frontend.git
+cd aws-digital-twin-frontend
 ```
 
 ### 2. Deploy the Amplify project
