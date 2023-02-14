@@ -51,5 +51,5 @@ else
   create_iot_policy
 fi
 
-echo "Attaching Policy to all users in user pool $1"
+echo "Attaching Policy to all users in identity pool $1"
 attach_policy_to_users
