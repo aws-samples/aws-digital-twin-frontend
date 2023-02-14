@@ -44,13 +44,13 @@ function DeviceDetails() {
             console.log('message ', data.value.current.state.reported)
             logvar = JSON.stringify(data.value.current.state.reported) + "\n" + logvar.match(/(?:^.*$\n?){1,9}/mg)[0]; // cut to 10 lines max.
             setLog(logvar)
-            if(data.value.current.state.reported.Lights) {
+            if(data.value.current.state.reported.lights) {
               setLights("on");
             } else {
               setLights("off");
             }
-            setEngine(data.value.current.state.reported.Drehzahl+" RPM");
-            setTemperature(data.value.current.state.reported.Temperatur+"°C");
+            setEngine(data.value.current.state.reported.rpm+" RPM");
+            setTemperature(data.value.current.state.reported.temp+"°C");
 
           } catch (error) {
             console.log(error)

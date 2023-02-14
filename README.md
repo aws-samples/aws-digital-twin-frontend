@@ -78,11 +78,10 @@ Amazon Cognito lets you add user sign-up, sign-in, and access control to your we
 
 ### 4. Create IAM Policiy for AWS IoT
 
-* Switch to the AWS Manamgement Console and follow Step 1 described [here](https://docs.amplify.aws/lib/pubsub/getting-started/q/platform/js/#aws-iot). 
-* Go back to Cognito and open the identity pool created by your Amplify deployment ("Manage Identities"). Use the identity browser to look up the ID of your previously created user. It should look like this "cd613140-0d0d-4524-a946-4ab90327a9fb"
-* Attach the iot-policy to the identity
+* Look up the ID of the Cognito Identity Pool
+* Run the script `create-and-add-policy.sh` with the _Identity Pool ID_
 ```bash 
-   aws iot attach-policy --policy-name <policy name step 5> --target <Identity ID>
+   ./create-and-add-policy.sh region:12345678-1234-1234-1234-123456789012 
 ```
 
 ### 5. Add you thing(s) to a thing group
