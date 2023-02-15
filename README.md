@@ -84,11 +84,17 @@ Amazon Cognito lets you add user sign-up, sign-in, and access control to your we
    ./create-and-add-policy.sh region:12345678-1234-1234-1234-123456789012 
 ```
 
-### 5. Add you thing(s) to a thing group
+### 5. Add your thing(s) to a thing group
 
 In AWS IoT Core, create a thing group called `iot-twin-demo` and add the thing(s) that is/are publishing data to Device Shadow.
 
 *Done! You will now be able to see your thing(s) listed in the frontend and can start customizing the application to your needs!*
+
+## Testing
+
+To test the Digital Twin Demo Frontend, you can run the script `generate-test-data.sh` to 
+* create a thing and add it to the `iot-twin-demo` thing group if it not yet exists
+* update the device shadow state of the thing with random test data every 10 seconds
 
 ## Pricing
 
