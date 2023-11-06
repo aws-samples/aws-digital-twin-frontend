@@ -13,8 +13,6 @@ The project can be used as a starting point / boilerplate for your own digital t
 ### Device Shadow
 To test this application, you should have at least one IoT thing registered with AWS IoT core and sending device shadow updates. Learn more about connecting devices to AWS IoT [here](https://docs.aws.amazon.com/iot/latest/developerguide/iot-connect-devices.html) and about the AWS IoT Device Shadow service [here](https://docs.aws.amazon.com/iot/latest/developerguide/iot-device-shadows.html).
 
-If you own an AWS IoT EduKit, you can follow [this SmartThermostat workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/0fc6bf2c-f59c-4490-9254-ef604942f5d3/en-US/smart-thermostat) to set up Device Shadow for your EduKit.
-
 ### Deployment Prerequesites
 + Access to an [AWS Account](https://aws.amazon.com/mobile/details/) with sufficient permissions
 
